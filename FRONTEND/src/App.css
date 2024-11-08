@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  background-color: #1f1f2f;
+  color: white;
+  font-family: "Happy Monkey", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.main-div{
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  align-items: center;
+  flex-direction: column;
+}
+.water-background{
+background-color: #4B495F;
+text-align: center;
+}
+.game-heading{
+padding: 5px 10px;
+border-radius: 6px;
+font-size: 40px;
+letter-spacing: 2px;
+}
+.square-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-gap: 10px;
+}
+.left , .right{
+height: 35px;
+width: 120px;
+background-color: #4B495F;
+border-bottom-left-radius: 50px;
+border-top-right-radius: 50px;
+text-align: center;
+padding-top: 4px;
+font-size: 15px;
+font-family: sans-serif;
+font-weight: 600;
+}
+.move-detection{
+  display: flex;
+  justify-content: space-between;
+ align-items:center;
+ width: 400px;
+ 
+}
+.finished-state{
+  text-align: center;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.playonline{
+  background-color: rgb(231, 231, 64);
+  font-weight: bold;
+  font-size: 60px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 40vh;
+  border:none;
+  color: rgb(255, 6, 6);
+border-bottom: 7px solid red;
+font-family: "Poppins", serif;
+
+}
+.waiting{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ font-size: 50px;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ color: chartreuse;
+letter-spacing: 4px;
+overflow: hidden;
+}
+.dots{
+  color: white;
+  padding-left: 10px;
+}
+.current-move-cross{
+  background-color: #3FA7F0 !important;
+  color: white !important;
+}
+
+.current-move-circle{
+  background-color: #f01e64 !important;
+  color: white !important;
+}
